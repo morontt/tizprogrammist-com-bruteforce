@@ -14,3 +14,8 @@
     LINES TERMINATED BY '\n';
 
 Переносим получившийся файл словаря к скрипту и запускаем.
+
+**P.S.** Не думал, что мне так повезёт, но пароль оказался в моих руках меньше, чем за минуту... Не используйте простые
+пароли.
+
+![fail](https://raw.githubusercontent.com/morontt/tizprogrammist-com-bruteforce/master/xyjak.png "Акт вандализма")
